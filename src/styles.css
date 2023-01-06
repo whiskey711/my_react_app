@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
+body{
+    font-family: 'Oxanium', cursive;
+    margin: 0%;
+}
+nav{
+    display: flex;
+    background-color: darkgray;
+    align-items: center;
+    padding: 2%;
+}
+nav > img{
+    height: 40px;
+    margin-right: 2%;
+}
+nav > h1{
+    margin-right: auto;
+    color: aquamarine;
+}
+nav > h2{
+    color: white;
+}
+#mainpage{
+    background-color: gray;
+}
