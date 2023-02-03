@@ -1,13 +1,18 @@
 import React from "react";
-import Navbar from "./componets/Navbar";
-import Main from "./componets/Main";
-import "./styles.css";
+import Cover from "./componets/Cover"
+import Question from "./componets/Question";
+import Quiz from "./componets/Quiz"
 
 export default function App(){
-    return(
-        <div className="container">
-            <Navbar />
-            <Main />
-        </div>
+    const [start, setStart] = React.useState(false);
+    
+    function startQuiz(){
+        setStart(true);
+    }
+    return (
+        <main>
+            {!start && <Cover startQuiz={startQuiz} />}
+            {start && <Quiz />}
+        </main>
     );
 }
